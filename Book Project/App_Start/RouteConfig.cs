@@ -16,7 +16,7 @@ namespace Book_Project
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "MainPage", action = "StartMenu", id = UrlParameter.Optional }
+                defaults: new { controller = "MainPage", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
