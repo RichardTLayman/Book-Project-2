@@ -10,6 +10,10 @@ namespace Book_Project.Models
         // picture
         // sound
         // text
-        string Texts { get; set; }
+        public int ID { get; set; }
+        public string ImageLinks { get; set; }
+        public string Texts { get; set; }
+
+        public string SoundLinks { get; set; }
     }
 }

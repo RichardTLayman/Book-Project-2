@@ -1,5 +1,15 @@
-﻿body {
+﻿body 
+{
     background-image: url('/Content/Images/parchment_1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.ImageBorder
+{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;  
+}
+
+
