@@ -8,15 +8,17 @@ namespace Book_Project.Controllers
 {
     public class MainPageController : Controller
     {
-        Page
+        public PagesEntities dbContext = new PagesEntities();
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Intro()
+        public ActionResult Intro(int pageWanted = 1)
         {
-            return View();
+            var model = dbContext.Links.FirstOrDefault(x => x.ID == pageWanted);
+            return View(model);
         }
 
       

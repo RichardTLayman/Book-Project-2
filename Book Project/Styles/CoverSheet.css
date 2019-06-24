@@ -2,5 +2,9 @@
     
     background-image: url('/Content/Images/BookCover.jpg');
     background-repeat: no-repeat;
-    background-size: 1600px 765px
+    background-size: 1600px 765px;
+}
+
+.redLink{
+
 }

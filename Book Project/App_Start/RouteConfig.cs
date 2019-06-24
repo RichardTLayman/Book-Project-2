@@ -13,6 +13,14 @@ namespace Book_Project
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();
+
+            routes.MapRoute(
+                name: "Intro",
+                url: "Intro/{pageWanted}",
+                defaults: new { controller = "MainPage", action = "Intro", pageWanted = 1 }
+                );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
