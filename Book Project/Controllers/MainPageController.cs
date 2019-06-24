@@ -8,7 +8,7 @@ namespace Book_Project.Controllers
 {
     public class MainPageController : Controller
     {
-        // GET: MainPage
+        Page
         public ActionResult Index()
         {
             return View();
