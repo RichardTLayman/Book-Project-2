@@ -1,22 +1,23 @@
-﻿@model Link
+﻿@model ProjectLink
 @{
     ViewBag.Title = "Intro";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <audio autoplay>
-    <source src="@Model.SoundLinks" type="audio/mpeg" />
+    <source src="../../@Model.Sounds" type="audio/mpeg" />
 </audio>
 
-<img class="center-block ImageBorder" src="@Model.ImageLinks" width="300" height="200" />
+<p><br /></p>
 
+<img class="center-block ImageBorder" src="../../@Model.Pictures" width="300" height="200" />
 
 <p><br /></p>
 <p><br /></p>
 
-<div class="ParaBorder">
+<div class="center-block ParaBorder">
     <p>
-        @Model.Texts
+        @Model.Paragraphs
     </p>
 </div>
 
@@ -24,9 +25,11 @@
 <p><br /></p>
 
 <div>
+
     <hr />
     <footer>
-        @Html.ActionLink($"{Model.OptionOne}", "Intro", new { pageWanted = Model.OptionOne }) @Html.ActionLink($"{Model.OptionTwoText}", "Intro", new { pageWanted = Model.OptionTwo})
+        @Html.ActionLink($"{Model.OptionOneText}", "Intro", new { pageWanted = Model.OptionOneID }, new { @class= "ALS" })
+        @Html.ActionLink($"{Model.OptionTwoText}", "Intro", new { pageWanted = Model.OptionTwoID }, new { @class= "ALS2" })
     </footer>
 </div>
 

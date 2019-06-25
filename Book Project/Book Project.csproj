@@ -150,6 +150,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Pages.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ProjectLink.cs">
+      <DependentUpon>ProjectLinksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectLinksModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectLinksModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectLinksModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectLinksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectLinksModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectLinksModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -159,12 +177,16 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\cat.jpg" />
+    <Content Include="Content\Images\Goomba.jpg" />
     <Content Include="Content\Images\Mario1-1.jpg" />
+    <Content Include="Content\Images\MarioWarpPipe.gif" />
     <Content Include="Content\Images\parchment_1.png" />
     <Content Include="Content\Images\pixil-gif-drawing.gif" />
     <Content Include="Content\Sounds\Arcade Explo A.wav" />
     <Content Include="Content\Sounds\Fairy Fountain.mp3" />
+    <Content Include="Content\Sounds\Mario-main-theme-overworld.mp3" />
     <Content Include="Content\Sounds\super-mario-death-sound-sound-effect.mp3" />
+    <Content Include="Content\Sounds\Warp_Pipe.wav" />
     <Content Include="Pages.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Pages.edmx</DependentUpon>
@@ -174,6 +196,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Pages.edmx</DependentUpon>
       <LastGenOutput>Pages.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectLinksModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectLinksModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectLinksModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectLinksModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectLinksModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectLinksModel.cs</LastGenOutput>
     </Content>
     <Content Include="Styles\CoverSheet.css" />
     <Content Include="favicon.ico" />
@@ -188,6 +220,13 @@
     </EntityDeploy>
     <Content Include="Pages.edmx.diagram">
       <DependentUpon>Pages.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="ProjectLinksModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProjectLinksModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ProjectLinksModel.edmx.diagram">
+      <DependentUpon>ProjectLinksModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

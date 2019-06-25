@@ -5,6 +5,14 @@
     background-size: 1600px 765px;
 }
 
-.redLink{
-
+.redLink {
+    color: Red;
+    font-size: 32px;
+    background-color: Black;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 650px;
 }
