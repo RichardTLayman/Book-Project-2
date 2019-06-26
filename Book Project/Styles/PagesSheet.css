@@ -22,10 +22,11 @@
 .ALS{
     color: black;
     font-size: 32px;
+    margin-left: 100px;
 }
 
 .ALS2{
-    color: red;
+    color: black;
     font-size: 32px; 
     margin-left: 260px;
 }
